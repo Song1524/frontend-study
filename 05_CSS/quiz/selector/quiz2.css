@@ -1,0 +1,29 @@
+.logo {
+    border: 2px
+    solid red;
+}
+
+header nav .main-menu {
+    border: 2px
+    solid red;
+}
+
+#global_aside a:nth-of-type(5) img {
+    border: 2px solid red;
+}
+
+#detail_list .column-1 > li.header {
+    border: 2px solid red;
+}
+
+#detail_list > ul:nth-of-type(2) > li:nth-of-type(3) {
+    border: 2px solid red;
+}
+
+#detail_list h3:hover {
+    border: 2px solid red;
+}
+
+input[type="text"]:focus:not([readonly]) {
+    background-color: red;
+}
