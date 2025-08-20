@@ -9,7 +9,7 @@
   <style>
     div.main-background {
       height: 500px;
-      background-image: url("../layout/images/shoes.jpg");
+      background-image: url("./images/shoes.jpg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -42,6 +42,11 @@
       padding: 4px 20px 4px 20px;
       border-radius: 5px;
       border: none;
+      /* 누를 수 있는 요소는 커서 모양을 포인터로 */
+      cursor: pointer;
+    }
+    .main-button:hover {
+      background-color: #ccc;
     }
 
     div.sub-description {
@@ -63,7 +68,8 @@
     }
 
     div.history {
-      margin-top: 100px;
+      padding-top: 80px;
+      background-color: rgb(189, 183, 183);
     }
     div.history > h4 {
       text-align: center;
@@ -72,9 +78,31 @@
     div.history > ul {
       font-size: 14px;
     }
+
+    nav.nav-container {
+      height: 40px;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .menu {
+      display: flex;
+      list-style: none;
+
+      column-gap: 10px;
+    }
   </style>
 </head>
 <body>
+  <nav class="nav-container">
+    <h1>Shose Shop</h1>
+    <ul class="menu">
+      <li class="menu-item">Products</li>
+      <li class="menu-item">Services</li>
+    </ul>
+  </nav>
+
   <div class="main-background">
     <h4 class="main-title">Buy our excellent shoes!</h4>
     <p class="main-content">
