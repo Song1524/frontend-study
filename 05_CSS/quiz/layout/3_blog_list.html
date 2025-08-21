@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./3_blog-list.css">
+</head>
+
+<body>
+  <!-- Tip! 레이아웃 만드는 기본
+  뭘 만들든 레이아웃은 한상 수평(행)으로 자른 후 박스부터 만들고 시작하면 됨
+  그리고 이 박스들을 전부 <div>로 구현해 놓으면 됨(물론 시멘틱 애그도 최대한 활용)
+  그리고 안에 글 넣고 그림 넣고 하면 끝!
+
+  이 때 <div>는 블록 요소이기 떄문에 위아래호 배치
+  좌우로 나란히 배치하고 싶으면 float(x), inline-block(o), Flexbox(b)
+  -->
+
+  <!-- navbar -->
+  <nav>
+    <ul class="navbar">
+      <li>
+        <button type="button" class="menu-butteon">
+          영화
+        </button>
+      </li>
+      <li>
+        <button type="button" class="menu-butteon">
+          맛집
+        </button>
+      </li>
+      <li>
+        <button type="button" class="menu-butteon">
+          IT
+        </button>
+      </li>
+      <li>
+        <button type="button" class="menu-butteon">
+          컴퓨터
+        </button>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- blog list -->
+  <div class="contanier">
+    <!-- blog list item 800px -->
+    <div class="blog-list-item">
+      <div class="blog-content">
+        <div class="content-header"> 
+          <!-- 프로필 이미지 -->
+          <img src="../../images/img_avatar.png" alt="프로필 사진">
+          <!-- 작성자, 시간 -->
+          <span class="name">송진영</span>
+          1시간 전
+        </div>
+        <div class="content-body"> 
+          <!-- 글 제목, 내용 80% -->
+          <div class="content-body-title">가성비 맛집을 발견했어요!</div>
+          <div class="content-body-content">소고기 맛있어.</div>
+          <!-- 샘플 이미지 20% -->
+          <img src="../../images/logo.png" alt="이미지">
+      </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

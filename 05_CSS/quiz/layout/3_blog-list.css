@@ -1,0 +1,58 @@
+.navbar {
+  display: flex;
+  list-style: none;
+  column-gap: 10px;
+}
+.menu-butteon {
+  width: 80px;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+
+.contanier {
+width: 800px;
+margin: 0 auto;
+}
+
+.blog-list-item {
+
+}
+
+.blog-content {
+  width: 80%;
+}
+
+.content-header {
+  width: 80%;
+  
+}
+.content-header > img {
+  width: 80px;
+  border-radius: 50%;
+}
+span.name {
+  font-weight: bold;
+}
+
+.content-body {
+  width: 80%;
+}
+
+.content-body-title {
+font-weight: bold;
+padding: 14px 0;
+}
+
+.content-body-content {
+
+}
+
+.content-body > img{
+  display: inline-block;
+  text-align: end;
+  width: 20%;
+}
