@@ -1,0 +1,65 @@
+.form-background {
+  background-color: black;
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.form-container {
+  background-color: white;
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  padding: 20px 20px 30px;
+}
+
+input {
+font-size: 20px;
+border: 2px solid #ccc;
+border-radius: 6px;
+padding: 6px 10px;
+width: 90%;
+}
+
+.box1 {
+  width: 104%;
+}
+
+.box2 {
+  width: 100%;
+  margin-top: 0px;
+}
+
+.namebox {
+  display: inline-block;
+  width: 49%;
+}
+
+.message {
+  height: 100px;
+}
+
+.login {
+  border: none;
+  border-radius: 6px;
+  background-color: red;
+  color: white;
+  padding: 12px 30px;
+  margin-right: 3%;
+  cursor: pointer;
+}
+
+.last {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+.Agree {
+  display: flex;
+  column-gap: 4px;
+  align-items: center;
+}

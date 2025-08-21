@@ -40,17 +40,14 @@ span.name {
   font-weight: bold;
 }
 
-.content-body {
-  width: 80%;
-  text-align: right;
+.content-body{  
+  display: flex;
+  justify-content: space-between;
 }
-
-.content-body-title {
-font-weight: bold;
-padding: 14px 0;
+.content-body > {
+  width: 80%;
 }
 
 .content-body > img{
   width: 20%;
-  display: inline-block;
 }
