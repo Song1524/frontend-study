@@ -10,8 +10,11 @@
   font-size: 16px;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
-
+.menu-butteon:hover {
+  background-color: #ccc;
+}
 
 .contanier {
 width: 800px;
@@ -19,7 +22,7 @@ margin: 0 auto;
 }
 
 .blog-list-item {
-
+  
 }
 
 .blog-content {
@@ -28,7 +31,6 @@ margin: 0 auto;
 
 .content-header {
   width: 80%;
-  
 }
 .content-header > img {
   width: 80px;
@@ -40,6 +42,7 @@ span.name {
 
 .content-body {
   width: 80%;
+  text-align: right;
 }
 
 .content-body-title {
@@ -47,12 +50,7 @@ font-weight: bold;
 padding: 14px 0;
 }
 
-.content-body-content {
-
-}
-
 .content-body > img{
-  display: inline-block;
-  text-align: end;
   width: 20%;
+  display: inline-block;
 }
