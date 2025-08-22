@@ -1,0 +1,20 @@
+/* 공통 스타일 */
+* {
+  box-sizing: border-box;
+}
+
+table {
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid lightsteelblue;
+  padding: 10px;
+}
+
+.cart-background {
+  background-color: lightsteelblue;
+
+}
+.inner {
+  max-width: 700px;
+}
