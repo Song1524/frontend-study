@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="./5_cart.css">
 </head>
 
 <body>
@@ -16,6 +17,7 @@
         <!-- 4행 5열 -->
         <thead>
           <tr>
+          <th></th>
           <th class="ITEM">ITEM</th>
           <th class="AMOUNT">AMOUNT</th>
           <th class="PRICE">PRICE</th>
@@ -23,25 +25,26 @@
           </tr>
         </thead>
         <tbody>
-          <td>카메라</td>
+          <td><img src="./images/item1.png" alt="카메라"></td>
+          <td class="first">카메라</td>
           <td>1</td>
           <td>100,000</td>
           <td>100,000</td>
         </tbody>
         <tbody>
-          <td>신발</td>
+          <td><img src="./images/item2.png" alt="신발"></td>
+          <td class="first">신발</td>
           <td>2</td>
           <td>59,000</td>
           <td>118,000</td>
         </tbody>
         <tfoot>
-          <td>주문금액</td>
-          <td>218,000</td>
+          <td colspan="5">주문금액 218,000</td>
         </tfoot>
       </table>
       <div class="btn-group">
         <a href="#">계속 쇼핑하기</a>
-        <button type="button">구매하기</button>
+        <button type="button" class="by">구매하기</button>
       </div>
     </div>
   </div>

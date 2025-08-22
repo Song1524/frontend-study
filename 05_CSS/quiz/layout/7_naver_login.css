@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+hr {
+  border: 1px solid rgb(224, 218, 218);
+  margin: 0;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  width: 70vw;
+  min-width: 280px;
+  max-width: 400px;
+  height: 280px;
+  border: 2px solid rgb(224, 218, 218);
+  border-radius: 16px;
+}
+
+p {
+  margin: 0;
+}
+.input {
+  width: 90%;
+  height: 127px;
+  margin: 0 auto;
+  vertical-align: middle;
+  border: 1px solid rgb(224, 218, 218);
+  border-radius: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px
+  
+}
+
+label {
+  width: 90%;
+  height: 22px;
+  border: 0;
+  margin: 0 5px;
+  outline: none;
+  position: relative;
+  top: 18px;
+}
+input {
+  width: 90%;
+  height: 30px;
+  border: 0;
+  margin: 0 8px;
+  outline: none;
+}
+
+.id {
+  width: 100%;
+  height: 62px;
+}
+.pw {
+  width: 100%;
+  height: 62px;
+}
+.id:focus-within{
+  border: 2px solid green;
+  border-radius: 16px 16px 0 0;
+}
+.pw:focus-within {
+  border: 2px solid green;
+  border-radius: 0 0 16px 16px;
+}
+
+.label {  
+  font-size:18px;
+  color: rgb(119, 116, 116);
+  transition: .25s; 
+}
+.id:focus-within .label {
+  font-size:12px; 
+  top: 0;
+}
+.pw:focus-within .label {
+  font-size:12px; 
+  top: 0;
+}
+
+.btn-grop {
+  width: 90%;
+  margin: 0 auto;
+}
+.btn {
+  width: 100%;
+  height: 40px;
+  border-radius: 16px;
+  border: 2px solid green;
+
+}
+.join {
+  background-color: green;
+  color: black;
+  margin-bottom: 10px;
+}
+.acc {
+  background-color: white;
+  color: green;
+}
