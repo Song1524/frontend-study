@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // 문제5
+    // 사용자로부터 세 개의 정수를 입력받아, 
+    // 그 수들의 최대값과 최소값, 합계와 평균을 구해서 브라우저에 출력하세요.
+
+
+    // 풀이5
+    // 주의! 덧셈을 하거나 문자끼리 비교를 피하려면 숫자로 변환해 줄 것!!
+    // '11' > '2' => false
+    // '11' > 2 => true
+
+    const num1 = Number(prompt('정수1을 입력하세요.'));
+    const num2 = Number(prompt('정수2을 입력하세요.'));
+    const num3 = Number(prompt('정수3을 입력하세요.'));
+
+    let big;
+    if (num1 < num2) {
+      if (num2 < num3) {
+        big = num3;
+      } else if (num2 > num3) {
+        big = num2
+      }
+    } else if (num1 > num2) {
+      if (num1 > num3) {
+        big = num1
+      } else if (num1 < num3) {
+        big = num3
+      }
+    }
+
+    let small;
+    if (num1 > num2) {
+      if (num2 > num3) {
+        small = num3;
+      } else if (num2 < num3) {
+        small = num2
+      }
+    } else if (num1 < num2) {
+      if (num1 < num3) {
+        small = num1
+      } else if (num1 > num3) {
+        small = num3
+      }
+    }
+    document.write(`입력한 정수1: ${num1}`, '<br>');
+    document.write(`입력한 정수2: ${num2}`, '<br>');
+    document.write(`입력한 정수2: ${num3}`, '<br>');
+    document.write(`------------------------------------------`, '<br>');
+    document.write(`입력한 정수의 최댓값: ${big}`, '<br>');
+    document.write(`입력한 정수의 최솟값: ${small}`, '<br>');
+    document.write(`입력한 정수의 합: ${num1 + num2 + num3}`, '<br>');
+    document.write(`입력한 정수의 평균: ${(num1 + num2 + num3) / 3}`, '<br>');
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
