@@ -85,7 +85,7 @@
     }
     .login-container .form-input:focus + .text-label,
     .login-container .id-box.on + .text-label,
-    .login-container .pw-box.on + .text-label{
+    .login-container .pw-box.on + .text-label {
       font-size: 12px;
       bottom: 30px;
     }
@@ -134,29 +134,34 @@
       inputEl.addEventListener('blur', function () {
         parentEl.classList.remove('focused');
       });
-      
+
       // 이벤트 추가 실습
-      // change: 요소와 값이 변경되고 포커스를 잃었을 때 발생
+      // change: 요소의 값이 변경되고 포커스를 잃었을 때 발생
       inputEl.addEventListener('change', function () {
-        console.log('change 이벤트 발생');
+        console.log('change 이벤트 발생!');
         console.log(inputEl.value);
         
-        if (inputEl.value === true) {
+        if (inputEl.value) { // input 요소에 값이 있으면
           parentEl.classList.add('on');
         } else {
           parentEl.classList.remove('on');
         }
-      })
+      });
     });
 
     eyeIcon.addEventListener('click', function () {
-      if (pwInput.type === 'password') {
-        eyeIcon.textContent = 'visibility';
-        pwInput.type = 'text';
-      } else {
-        eyeIcon.textContent = 'visibility_off';
-        pwInput.type = 'password';
-      }
+      // if (pwInput.type === 'password') {
+      //   eyeIcon.textContent = 'visibility';
+      //   pwInput.type = 'text';
+      // } else {
+      //   eyeIcon.textContent = 'visibility_off';
+      //   pwInput.type = 'password';
+      // }
+
+      // 삼항 연산자 사용 시
+      const isPassword = pwInput.type === 'password';
+      pwInput.type = isPassword ? 'text' : 'password';
+      eyeIcon.textContent = isPassword ? 'visibility' : 'visibility_off';
     });
   </script>
 </body>
