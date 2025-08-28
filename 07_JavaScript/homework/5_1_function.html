@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      width: 150px;
+      height: 150px;
+      background-image: url('./images/sponge.png');
+      background-size: cover;
+      border: 4px dotted rgb(163, 163, 8);
+      /* border-radius: 40px; */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="sponge"></div>
+  <input type="range" id="radius" min="0" max="75" step="5">
+  <span id="radiusValue"></span>
+
+  <script>
+    const inputRadius = document.querySelector('#radius');
+    const radiusValue = document.querySelector('#radiusValue');
+    const borderRadius = document.querySelector('.sponge');
+
+    radiusValue.textContent = inputRadius.value;
+
+    borderRadius.style.borderRadius = `${inputRadius.value}px`;
+
+    inputRadius.addEventListener('input', function () {
+      radiusValue.textContent = inputRadius.value;
+      borderRadius.style.borderRadius = `${inputRadius.value}px`;
+    })
+  </script>
+</body>
+
+</html>

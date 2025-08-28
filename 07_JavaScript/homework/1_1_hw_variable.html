@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button type="button" class="plus">+</button>
+  <button type="button" class="minus">-</button>
+  <div></div>
+  <img src="./images/sponge.png" alt="스폰지밥" width="100" height="100">
+
+  <script>
+    const plusBtn = document.querySelector('.plus');
+    const minusBtn = document.querySelector('.minus');
+    const spongeImg = document.querySelector('img');
+    
+    plusBtn.addEventListener('click', function () {
+      spongeImg.width += 100;
+      spongeImg.height += 100;
+    })
+
+    minusBtn.addEventListener('click', function () {
+      spongeImg.width -= 100;
+      spongeImg.height -= 100;
+    })
+
+  </script>
+</body>
+
+</html>

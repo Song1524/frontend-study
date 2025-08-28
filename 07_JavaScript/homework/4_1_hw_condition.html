@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+
+<body>
+  <label for="">개수:</label>
+  <input type="number" class="orderNum">
+  <button type="button" class="order" onclick="order()">주문</button>
+  <div class="delivery">
+  </div>
+
+  <script>
+    const orderNum = document.querySelector('.orderNum');
+    function order() {
+      document.querySelector('.delivery').innerHTML = '';
+      for (let i = 0; i < orderNum.value; i++) {
+        document.querySelector('.delivery').innerHTML += `<div class="food">
+                                                            <img src="./images/popcorn.png" alt="팝콘">
+                                                            <img src="./images/coke.png" alt="콜라">
+                                                            <img src="./images/coke.png" alt="콜라">
+                                                          </div>`;      
+      }
+    }
+  </script>
+</body>
+
+</html>

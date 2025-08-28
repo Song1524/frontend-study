@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <label for="">계절</label>
+  <input type="radio" name="season" class="spring">봄
+  <input type="radio" name="season" class="summer">여름
+  <input type="radio" name="season" class="autumn">가을
+  <input type="radio" name="season" class="winter">겨울
+  <div></div>
+  <label for="">기온</label>
+  <input type="number" class="temperature">
+  <div></div>
+  <button type="button" onclick="warning()">확인</button>
+
+  <script>
+    const spring = document.querySelector('.spring');
+    const summer = document.querySelector('.summer');
+    const autumn = document.querySelector('.autumn');
+    const winter = document.querySelector('.winter');
+    const temperature = document.querySelector('.temperature');
+
+    function warning() {
+      if (spring.checked) {
+        alert(`봄`);
+      } else if (summer.checked) {
+        if (temperature.value >= 33 && temperature.value <= 34) {
+          alert(`폭염 주의보`);
+        } else if (temperature.value >= 35) {
+          alert(`폭염 경보`);
+        } else {
+          alert(`여름`);
+        }
+      } else if (autumn.checked) {
+        alert(`가을`);
+      } else if (winter.checked) {
+        if (temperature.value <= -12 && temperature.value >= -14) {
+          alert(`한파 주의보`);
+        } else if (temperature.value <= -15) {
+          alert(`한파 경보`);
+        } else {
+          alert(`겨울`);
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>

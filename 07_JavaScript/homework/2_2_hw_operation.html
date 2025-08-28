@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <textarea name="input" id="inputCon"></textarea>
+  <button type="button" class="addBtn" onclick="add()">누적</button>
+  <div></div>
+  <textarea name="output" id="outputCon"></textarea>
+
+  <script>
+    const inputBox = document.querySelector('#inputCon');
+    const outputBox = document.querySelector('#outputCon');
+
+    function add() {
+    outputBox.value += inputBox.value;
+    inputBox.value = ``;
+    }
+  </script>
+</body>
+
+</html>

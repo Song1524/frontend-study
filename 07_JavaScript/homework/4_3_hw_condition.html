@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+  .gulBox {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .gul {
+    margin: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  </style>
+</head>
+
+<body>
+  <button type="button" class="start">체험 시작</button>
+  <div class="gulBox"></div>
+
+  <script>
+    const startBtn = document.querySelector('.start');
+
+    startBtn.addEventListener('click', function () {
+      document.querySelector('.gulBox').innerHTML = '';
+      const gram = prompt('몇 g?');
+      
+      for (let i = 1; i <= parseInt(gram / 10); i++) {
+        document.querySelector('.gulBox').innerHTML += `<div class="gul">
+                                                          <span>${i * 10}g</span>
+                                                          <img src="./images/gyul.png" alt="귤">
+                                                        </div>`;
+        
+      }
+    })
+  </script>
+</body>
+
+</html>

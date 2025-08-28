@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .btngroup {
+      display: flex;
+      justify-content: center;
+    }
+    button {
+      margin: 15px;
+    }
+
+    .beets {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    div.plus {
+      background-color: aqua;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      margin: 8px;
+      
+    }
+  </style>
+</head>
+
+<body>
+  <div class="btngroup">
+    <button type="button" class="plus" onclick="plusBeets()">구슬 추가</button>
+    <button type="button" class="oddAndEven" onclick="and()">홀짝</button>
+    <button type="button" class="reset" onclick="resetBeets()">초기화</button>
+  </div>
+  <div class="beets">
+
+  </div>
+
+  <script>
+    const beets = document.querySelector('.beets');
+
+    function plusBeets() {
+      document.querySelector('.beets').innerHTML += `<div class="plus"></div>`;
+    }
+
+    function and() {
+      const count = beets.children.length;
+      if (count % 2 === 0) {
+        alert(`구슬의 개수는 ${count} => 짝수 입니다.`);
+      } else  {
+        alert(`구슬의 개수는 ${count} => 홀수 입니다.`);
+      }
+    }
+
+    function resetBeets() {
+    let resetBtn = document.querySelector('.reset');
+      document.querySelector('.beets').innerHTML = ``;
+      
+    }
+    
+  </script>
+</body>
+
+</html>
