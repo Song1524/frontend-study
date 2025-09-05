@@ -33,11 +33,11 @@
       // 풀이4
       const file = fileInput.files[0];
       const fileName = file.name;
-
       console.log(fileName);
 
       fileExt = fileName.split('.').pop();
-
+      console.log(fileExt);
+      
       if (!imgFileExt.includes(fileExt)) {
         alert('이미지 파일이 아닙니다.')
       }
